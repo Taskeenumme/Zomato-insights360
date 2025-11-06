@@ -1,52 +1,75 @@
-Zomato-insights360
-Zomato Dataset Analysis Project
-This project performs Exploratory Data Analysis (EDA) on a Zomato dataset, focusing on data cleaning, processing, and visualization. The aim is to derive meaningful insights about restaurant ratings, locations, cuisines, and more.
+🍽️ Zomato Data Analysis Project
 
-Project Overview
+1. 📘 Project Overview
 
-This project demonstrates:
+This project performs an in-depth exploratory data analysis (EDA) of Zomato restaurant data to uncover insights into restaurant trends, customer preferences, pricing, and ratings. Using Python in a Jupyter Notebook environment, the analysis explores relationships among cuisines, cost, location, ratings, and other attributes to better understand the dynamics of the restaurant industry.
 
-1. Data Cleaning: Handling missing values, duplicate records, and normalizing columns.
-2. Data Processing: Cleaning specific columns like ratings, restaurant types, and costs.
-3. Visualization: Using matplotlib and seaborn for visualizing relationships and distributions across various restaurant features.
-   
-Navigate to the project directory:
+ 2. 💡 Objectives
 
-Open Zomato Dataset Analysis.ipynb in jupyter notebook and run all cells one by one.
+* Analyze restaurant distribution across cities and cuisines.
+* Identify factors influencing restaurant ratings and costs.
+* Explore correlations between online delivery options, votes, and ratings.
+* Visualize data trends using powerful Python visualization libraries.
 
-Dataset
-The dataset used in this project is Zomato restaurant data, which contains information like restaurant names, locations, cuisines, ratings, and more.
+3. 🧠 Tech Stack
 
-Columns used:
+* Programming Language: Python 3
+* Environment: Jupyter Notebook
+* Libraries Used:
+      * pandas – data cleaning and manipulation
+      * numpy – numerical computation
+      * matplotlib – data visualization
+      * seaborn – statistical plots and heatmaps
+      * plotly – interactive visualizations (optional)
 
-Restaurant name
-Location
-Online order availability
-Booking table facility
-Ratings, Votes
-Cuisines, etc.
-Exploratory Data Analysis
-We start by understanding the dataset with:
+4. 📂 Dataset Information
 
-Checking dataset shape and columns.
-Displaying the first few records using data.head().
-Data Cleaning
-Data cleaning steps include:
+* Source: Zomato Restaurant Data (CSV file)
+* File Name: `zomato.csv`
+* Data Includes:
+  * Restaurant name
+  * Location and city
+  * Cuisine type(s)
+  * Average cost for two
+  * Ratings and votes
+  * Online delivery and table booking availability
 
-Dropping redundant columns such as URL, address, phone number, etc.
-Handling missing values in the rate column by removing unwanted characters and filling missing values with the mean rating.
-Cleaning other columns like cost2plates, location, rest_type, and cuisines to ensure data consistency.
-Data Visualization
-Using matplotlib and seaborn, we visualize key insights:
+> The dataset provides real-world restaurant data scraped from Zomato’s platform (for educational and analytical purposes only).
 
-Count of restaurants per location.
-Availability of online ordering and table booking facilities.
-Restaurant types and their ratings.
-Distribution of votes across different locations and cuisines.
-Sample visualizations include:
+5. ✨ Key Features
 
-Count plots of restaurant locations.
-Boxplots comparing online ordering facilities with ratings.
-Bar charts for location-based restaurant facilities and vote counts.
-Conclusion
-This project provided insights into various features of restaurants in the dataset. By cleaning and visualizing the data, we observed patterns related to restaurant ratings, the availability of online orders, and location-specific trends. These insights could help users in making informed decisions about their dining preferences.
+* Data Cleaning: Handle missing values, duplicates, and inconsistent entries.
+ 
+* Exploratory Data Analysis (EDA):
+
+   * Univariate and bivariate analysis of key attributes.
+   * Correlation between ratings, votes, and cost.
+   * Distribution of restaurants by location and cuisine.
+    
+* Visualization:
+
+   * Top cuisines and most popular cities.
+   * Cost vs rating trends.
+   * Heatmaps and pie charts for distribution insights.
+    
+* Insights Generation:
+
+   * Identify affordable and highly-rated restaurants.
+   * Detect city-specific cuisine preferences.
+
+6. 🧩 Example Output
+
+Here are some example insights derived from the analysis:
+
+* Top cuisines: North Indian, Chinese, and Italian dominate across cities.
+* Highest restaurant density: Bangalore and Delhi NCR.
+* Online delivery trend: Restaurants offering online delivery tend to get more votes.
+* Cost vs Rating: Higher-rated restaurants do not always charge more.
+
+7. 📊 Results and Insights
+
+The notebook concludes with several actionable insights that can help:
+
+* Restaurant owners understand market trends.
+* Customers discover popular cuisines in their city.
+* Analysts explore real-world data patterns for business intelligence.
